@@ -3,13 +3,13 @@ import Image from 'next/image';
 import logo from '@/assets/Logo.svg';
 import Ranking from './ranking';
 import Stats from './stats';
+import InviteLinkInput from './invitelinkInput';
 
-import { Link, Copy } from "lucide-react";
-import { InputRoot, InputIcon, InputField } from "@/components/input";
-import { IconButton } from '@/components/icon-button';
 
 
 export default function InvitePage() {
+  const inviteLink = "http://localhost:3000/invite/348729384"
+
   return (
     <div className="min-h-dvh flex items-center justify-between gap-16 flex-col md:flex-row">
 
@@ -37,17 +37,7 @@ export default function InvitePage() {
             </p>
           </div>
 
-          <InputRoot>
-            <InputIcon>
-              <Link className="size-5" />
-            </InputIcon>
-
-            <InputField readOnly defaultValue="http://google.com" />
-
-            <IconButton className="-mr-2">
-              <Copy className="size-5" />
-            </IconButton>
-          </InputRoot>
+          <InviteLinkInput inviteLink={ inviteLink } />
 
           <Stats />
         </div>

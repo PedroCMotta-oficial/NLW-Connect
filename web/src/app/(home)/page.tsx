@@ -3,9 +3,7 @@ import Image from 'next/image';
 import logo from '@/assets/Logo.svg';
 import HomepageForm from './homepageForm';
 
-import { Radio, User, Mail, ArrowRight } from "lucide-react";
-import { InputRoot, InputIcon, InputField } from "@/components/input";
-import { Button } from "@/components/button";
+import { Radio } from "lucide-react";
 
 export default function Home() {
   return (

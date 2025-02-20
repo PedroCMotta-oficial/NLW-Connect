@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 import logo from '@/assets/Logo.svg';
-import Ranking from './ranking';
-import Stats from './stats';
+import { Ranking } from './ranking';
+import { Stats } from './stats';
 import InviteLinkInput from './invitelinkInput';
 
 
@@ -46,7 +46,7 @@ export default async function InvitePage(props: InvitePageProps) {
 
           <InviteLinkInput inviteLink={ inviteLink } />
 
-          <Stats />
+          <Stats subscriberId={subscriberId} />
         </div>
 
       </div>
